@@ -1,9 +1,9 @@
 const express = require("express")
 const {connection} = require("./db")
 
-const { ownerRouter } = require("./routes/owners.route")
-const { hotelRouter } = require("./routes/hotel.route")
-const { auth } = require("./middleware/auth")
+const { ownerRouter } = require("./c4/routes/owners.route")
+const { hotelRouter } = require("./c4/routes/hotel.route")
+const { auth } = require("./c4/middleware/auth")
 const swaggerJSdoc = require("swagger-jsdoc");
 const swaggerUi = require("swagger-ui-express");
 const rateLimit = require("express-rate-limit");
